@@ -29,6 +29,6 @@ function currentLine(array) {
   if (array.length === 0) {
     return ('The line is currently empty.')
   } else {
-    return (`The line is currently: ${array.key()}. ${array}`)
+    return (`The line is currently: ${array.keys()}. ${array}`)
   }
 }
