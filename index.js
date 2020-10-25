@@ -7,7 +7,7 @@
 
 function takeANumber(array, name) {
   array.push(name)
-  return (`Welcome, ${name}. You are number ${array.length - 1} in the line.`)
+  return (`Welcome, ${name}. You are number ${array.length} in line.`)
 
 }
 
