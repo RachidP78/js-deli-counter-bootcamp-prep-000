@@ -19,8 +19,9 @@ function nowServing(array) {
   } else {
     return (`Currently serving ${array[0]}.`)
     array.shift()
+    return array
   }
-  return array
+  //return array
 }
 
 // currentLine
