@@ -14,7 +14,7 @@ function takeANumber(array, name) {
 // 4) returns "There is nobody waiting to be served!" when no one is on line
 // 5) returns an announcement about the person it is serving, and shifts the line
 function nowServing(array) {
-  if (array.length < -1) {
+  if (array.length === 0) {
     return ('There is nobody waiting to be served!')
   } else {
     return (`Currently serving ${array[0]}.`)
