@@ -29,6 +29,10 @@ function currentLine(array) {
   if (array.length === 0) {
     return ('The line is currently empty.')
   } else {
-    return (`The line is currently: ${array.keys() + array()}`)
+    var line = []
+    for (let i = ; i < array.length; i++) {
+      line.push(` + [i+1] + ${array(i)}`)
+    }
+    return (`The line is currently: ${line}`)
   }
 }
