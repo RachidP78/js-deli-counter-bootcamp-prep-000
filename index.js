@@ -10,11 +10,18 @@ function takeANumber(array, name) {
   return (`Welcome, ${name}. You are number ${array.length} in line.`)
 }
 
-
 // nowServing
 // 4) returns "There is nobody waiting to be served!" when no one is on line
 // 5) returns an announcement about the person it is serving, and shifts the line
-
+function nowServing(array) {
+  if (array.length < -1) {
+    return ('There is nobody waiting to be served!')
+  } else {
+    return (`Now serving ${array[0]}!`)
+    array.shift(array[0])
+  }
+  return array
+}
 
 // currentLine
 // 6) returns "The line is currently empty." if no one is in line
