@@ -30,7 +30,7 @@ function currentLine(array) {
     return ('The line is currently empty.')
   } else {
     var line = []
-    for (let i = ; i < array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
       line.push(` + [i+1] + ${array(i)}`)
     }
     return (`The line is currently: ${line}`)
