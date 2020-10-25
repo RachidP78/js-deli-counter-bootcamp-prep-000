@@ -27,11 +27,11 @@ function nowServing(array) {
 // 8) returns a different response programmatically given a different array of names
 function currentLine(array) {
   if (array.length === 0) {
-    return ('The line is currently empty.') 
+    return ('The line is currently empty.')
   } else {
     for (let i = 0: i < array.length; i++) {
       return (`The line is currently: ${i}. ${array(i)}`)
     }
   }
-  
+
 }
